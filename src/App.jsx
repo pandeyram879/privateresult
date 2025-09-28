@@ -171,7 +171,7 @@ function App() {
         <Link to="/certifications">Certifications</Link>
         <Link to="/careerpages">CareerPages</Link>
         <a
-          href="https://www.instagram.com/the_kanpur_vibes?igsh=MWppcDZ1MXNIN3N2bw=="
+          href="https://www.instagram.com/privateresult/"
           className="whatsapp-link"
           target="_blank"
           rel="noopener noreferrer"
