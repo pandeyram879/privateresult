@@ -1,0 +1,62 @@
+.updates-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.updates-container h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #202124;
+}
+
+.updates-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.update-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.update-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.update-card h2 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  color: #1a73e8;
+}
+
+.update-card .date {
+  font-size: 0.85rem;
+  color: #5f6368;
+  margin-bottom: 10px;
+}
+
+.update-card p {
+  margin-bottom: 10px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.update-card a {
+  color: #ea4335;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.update-card a:hover {
+  text-decoration: underline;
+}
+
+

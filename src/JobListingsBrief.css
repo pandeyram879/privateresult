@@ -1,0 +1,93 @@
+/* ===== JobListingsBrief.css ===== */
+
+/* Page container */
+.jobbrief-page {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #f7f9fc;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Title */
+.jobbrief-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+/* Table wrapper */
+.jobbrief-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Table head */
+.jobbrief-table thead {
+  background: #0077ff;
+  color: #fff;
+}
+
+.jobbrief-table th,
+.jobbrief-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 0.95rem;
+}
+
+.jobbrief-table tbody tr:hover {
+  background: #f1f6ff;
+  transition: background 0.3s ease;
+}
+
+/* Loading & Error text */
+.loading,
+.error {
+  text-align: center;
+  padding: 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* ===============================
+   Attractive Moving Gradient Button
+   =============================== */
+
+.jobbrief-table a.apply-btn {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: linear-gradient(270deg, #00eaff, #0077ff);
+  background-size: 200% 200%;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: gradientMove 3s linear infinite;
+}
+
+.jobbrief-table a.apply-btn:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 14px rgba(0, 234, 255, 0.4);
+}
+
+/* Gradient animation */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

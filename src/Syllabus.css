@@ -1,0 +1,108 @@
+/* General container */
+.syllabus-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+  background: #f7f9ff;
+}
+
+/* Main heading */
+.syllabus-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #0a1f44;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+/* Grid layout for syllabus cards */
+.syllabus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+/* Individual syllabus card */
+.syllabus-card {
+  background: linear-gradient(145deg, #ffffff, #e6f0ff);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.syllabus-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Syllabus title */
+.syllabus-card h2 {
+  font-size: 1.4rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+/* More details button */
+.more-btn {
+  background: #0d6efd;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background 0.3s;
+}
+
+.more-btn:hover {
+  background: #ff6600;
+}
+
+/* Syllabus details */
+.syllabus-details {
+  margin-top: 15px;
+}
+
+.syllabus-details p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.syllabus-details ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.syllabus-details ul li {
+  margin-bottom: 8px;
+}
+
+.syllabus-details ul li a {
+  color: #0d6efd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.syllabus-details ul li a:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .syllabus-container {
+    padding: 20px;
+  }
+
+  .syllabus-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .more-btn {
+    padding: 6px 12px;
+  }
+}

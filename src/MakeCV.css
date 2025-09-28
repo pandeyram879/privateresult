@@ -1,0 +1,266 @@
+/* =========================================================
+   Base Layout & Form
+   ========================================================= */
+.makecv-page {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
+  background: #f7f7f7;
+  font-family: Arial, sans-serif;
+}
+
+.makecv-form {
+  flex: 1 1 320px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.makecv-form h1 { margin-top: 0; }
+
+.makecv-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.makecv-form input,
+.makecv-form textarea,
+.makecv-form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.makecv-form .block {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  border: 1px dashed #ddd;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+.makecv-form button {
+  margin-top: 0.5rem;
+  padding: 0.45rem 0.9rem;
+  background: #3498db;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.makecv-form button:hover { background: #2980b9; }
+.makecv-form button.primary { background: #27ae60; }
+.makecv-form button.primary:hover { background: #1e874b; }
+
+.form-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.message {
+  margin-top: 0.5rem;
+  color: #27ae60;
+  font-weight: 600;
+}
+
+/* =========================================================
+   CV Preview Base
+   ========================================================= */
+.makecv-preview {
+  flex: 1 1 600px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow-x: auto;
+}
+
+.cv-template {
+  width: 100%;
+  color: #222;
+  line-height: 1.4;
+}
+
+.cv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.cv-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.cv-contact {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.cv-photo {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.cv-template h3 {
+  margin-top: 1.2rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.2rem;
+  font-size: 1.1rem;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.skill-chip {
+  background: #e0e0e0;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+/* =========================================================
+   15 Unique Template Variants (ATS-Friendly)
+   ========================================================= */
+
+/* 1. Minimal Classic */
+.cv-template.template-1 {
+  font-family: "Helvetica", Arial, sans-serif;
+  border-left: 6px solid #2c3e50;
+  padding-left: 1rem;
+}
+
+/* 2. Elegant Serif */
+.cv-template.template-2 {
+  font-family: "Georgia", serif;
+  color: #2c3e50;
+  letter-spacing: 0.2px;
+}
+
+/* 3. Modern Blue */
+.cv-template.template-3 {
+  border-top: 6px solid #3498db;
+  padding-top: 1rem;
+}
+
+/* 4. Side Bar Highlight */
+.cv-template.template-4 {
+  border-left: 8px double #27ae60;
+  padding-left: 1rem;
+  background: #fdfdfd;
+}
+
+/* 5. Boxed Shadow */
+.cv-template.template-5 {
+  border: 1px solid #ddd;
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* 6. Clean Sans */
+.cv-template.template-6 {
+  font-family: "Trebuchet MS", sans-serif;
+  color: #444;
+}
+
+/* 7. Purple Accent */
+.cv-template.template-7 {
+  border-top: 5px solid #8e44ad;
+  border-bottom: 5px solid #8e44ad;
+  padding: 1rem 0;
+}
+
+/* 8. Orange Title Bars */
+.cv-template.template-8 h3 {
+  background: #e67e22;
+  color: #fff;
+  padding: 0.2rem 0.4rem;
+  border: none;
+}
+
+/* 9. Dashed Border Chic */
+.cv-template.template-9 {
+  border: 2px dashed #7f8c8d;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+/* 10. Calibri Professional */
+.cv-template.template-10 {
+  font-family: Calibri, sans-serif;
+  color: #1a1a1a;
+}
+
+/* 11. Red Edge */
+.cv-template.template-11 {
+  border-left: 6px solid #c0392b;
+  padding-left: 1rem;
+  background: #fffafa;
+}
+
+/* 12. Green Outline */
+.cv-template.template-12 {
+  border: 2px solid #2ecc71;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+/* 13. Double Blue Header */
+.cv-template.template-13 h1 {
+  border-bottom: 4px double #2980b9;
+  padding-bottom: 0.3rem;
+}
+
+/* 14. Warm Gold */
+.cv-template.template-14 {
+  border-left: 6px solid #f39c12;
+  padding-left: 1rem;
+  font-family: Verdana, sans-serif;
+}
+
+/* 15. Shadow Card */
+.cv-template.template-15 {
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  padding: 1.2rem;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* --- A4 preview box --- */
+.makecv-preview {
+  width: 210mm;          /* A4 width */
+  min-height: 297mm;     /* at least one page height */
+  padding: 20mm;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+  overflow: auto;        /* still scrollable in the browser */
+}
+
+/* Optional: cleaner print output */
+@media print {
+  body {
+    margin: 0;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .makecv-preview {
+    box-shadow: none;
+    margin: 0;
+    page-break-after: always;
+  }
+}

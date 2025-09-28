@@ -1,0 +1,119 @@
+/* Playlists.css – matches Certifications style */
+
+.playlists-page {
+  font-family: 'Poppins', sans-serif;
+  padding: 40px 20px;
+  color: #fff;
+  text-align: center;
+  min-height: 60vh;
+  background: linear-gradient(180deg, rgba(15,32,39,0.95) 0%, rgba(28,54,60,0.95) 100%);
+}
+
+.playlists-title {
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+  color: #00eaff;
+  text-shadow: 0 6px 24px rgba(0, 234, 255, 0.14);
+}
+
+/* Topic filter */
+.playlist-filter {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #bfefff;
+}
+
+.playlist-filter select {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(0,0,0,0.25);
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+  outline: none;
+}
+.playlist-filter select:hover {
+  border-color: rgba(0,234,255,0.4);
+}
+
+/* Grid of playlist cards */
+.playlist-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.playlist-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-decoration: none;
+  padding: 18px 16px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.04);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+  color: #fff;
+  transition: transform 260ms ease, box-shadow 260ms ease, border-color 260ms ease;
+}
+
+.playlist-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 234, 255, 0.12);
+  border-color: rgba(0, 234, 255, 0.35);
+}
+
+.playlist-card:focus {
+  outline: none;
+  transform: translateY(-6px);
+  border-color: rgba(0, 234, 255, 0.45);
+  box-shadow: 0 12px 30px rgba(0, 234, 255, 0.12);
+}
+
+/* Thumbnail */
+.playlist-thumb {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 6px;
+  object-fit: cover;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+
+/* Video title & topic text */
+.playlist-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.playlist-topic {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.75);
+}
+
+/* Loading & error messages */
+.loading, .error {
+  font-size: 1.05rem;
+  color: #00eaff;
+  margin-top: 24px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  .playlists-page {
+    padding: 28px 12px;
+  }
+  .playlists-title {
+    font-size: 1.8rem;
+  }
+  .playlist-card {
+    padding: 14px;
+  }
+}

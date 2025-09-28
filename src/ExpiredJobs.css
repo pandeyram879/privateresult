@@ -1,0 +1,84 @@
+/* ===== Expired Jobs Page ===== */
+.expired-page {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #1e1e1e;          /* dark background for contrast */
+  color: #f5f5f5;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+/* Page Title */
+.expired-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ff6666;               /* soft red for expired feel */
+  letter-spacing: 0.5px;
+}
+
+/* Table Wrapper */
+.expired-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #2b2b2b;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Table Headings */
+.expired-table thead {
+  background: #3a3a3a;
+}
+.expired-table th {
+  padding: 14px 12px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: left;
+  border-bottom: 2px solid #444;
+}
+
+/* Table Body Rows */
+.expired-table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #444;
+  color: #ddd;
+}
+
+/* Alternate row shading */
+.expired-table tbody tr:nth-child(even) {
+  background: #262626;
+}
+
+/* Hover effect for rows (read-only look) */
+.expired-table tbody tr:hover {
+  background: #333333;
+}
+
+/* Loading / Error Text */
+.loading,
+.error {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+.error {
+  color: #ff4c4c;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .expired-page {
+    padding: 15px;
+  }
+  .expired-title {
+    font-size: 1.6rem;
+  }
+  .expired-table th,
+  .expired-table td {
+    padding: 10px 8px;
+    font-size: 0.9rem;
+  }
+}
