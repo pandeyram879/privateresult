@@ -255,7 +255,7 @@ function App() {
           <div className="footer-section">
             <h3>Contact Us</h3>
             <p>Email: support@privateresult.com</p>
-            <p>Phone: +91 98765 43210</p>
+            <p>Phone: +91 0000000000</p>
             <div className="social-icons">
               <a href="#"><i className="fab fa-facebook"></i></a>
               <a href="#"><i className="fab fa-twitter"></i></a>
